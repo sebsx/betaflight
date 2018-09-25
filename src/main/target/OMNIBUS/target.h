@@ -189,3 +189,35 @@
 
 #define USABLE_TIMER_CHANNEL_COUNT 8 // PPM + 6 Outputs (2 shared with UART3)
 #define USED_TIMERS             (TIM_N(1) | TIM_N(2) | TIM_N(3) | TIM_N(4) | TIM_N(8) | TIM_N(15))
+
+#undef USE_PPM
+#undef USE_PWM
+#undef USE_SERIALRX_IBUS       // FlySky and Turnigy receivers
+#undef USE_SERIALRX_SUMD       // Graupner Hott protocol
+#undef USE_SERIALRX_SUMH       // Graupner legacy protocol
+#undef USE_SERIALRX_XBUS       // JR
+#undef USE_SERIALRX_JETIEXBUS
+
+#undef USE_TELEMETRY_HOTT
+#undef USE_TELEMETRY_IBUS
+#undef USE_TELEMETRY_IBUS_EXTENDED
+#undef USE_TELEMETRY_JETIEXBUS
+
+#undef ACRO_TRAINER
+
+// #undef USE_SERIALRX_SPEKTRUM
+#undef USE_SERIALRX_CRSF
+#undef USE_SERIALRX_SBUS
+#undef USE_SERIALRX_FPORT
+
+#define USE_ABSOLUTE_CONTROL
+#define USE_ITERM_RELAX
+#define USE_RC_SMOOTHING_FILTER
+#define USE_OSD
+#define USE_OSD_OVER_MSP_DISPLAYPORT
+#define USE_OSD_ADJUSTMENTS
+#define USE_SIGNATURE
+#define USE_LED_STRIP
+#define USE_HUFFMAN
+#define USE_PINIO
+#define USE_PINIOBOX
